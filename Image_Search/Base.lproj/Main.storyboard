@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DRv-ar-wmF">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image Collection View Controller-->
+        <scene sceneID="NbU-mg-DsK">
+            <objects>
+                <viewController storyboardIdentifier="ImageCollectionVC" id="DRv-ar-wmF" customClass="ImageCollectionViewController" customModule="Image_Search" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uEh-lo-vFZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Cm8-t5-ywW">
+                                <rect key="frame" x="5" y="100" width="404" height="786"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qHa-he-o35">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="BR6-SX-tud" customClass="ImageCellCollectionViewCell" customModule="Image_Search" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WbF-Id-cBb">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="0GO-7I-jQl">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="NkH-6a-oqq" firstAttribute="trailing" secondItem="0GO-7I-jQl" secondAttribute="trailing" id="4WL-Kc-njz"/>
+                            <constraint firstAttribute="bottom" secondItem="Cm8-t5-ywW" secondAttribute="bottom" constant="10" id="QWn-Bt-Mzp"/>
+                            <constraint firstItem="0GO-7I-jQl" firstAttribute="top" secondItem="NkH-6a-oqq" secondAttribute="top" id="T1T-2A-ZJW"/>
+                            <constraint firstItem="0GO-7I-jQl" firstAttribute="leading" secondItem="NkH-6a-oqq" secondAttribute="leading" id="gXY-3F-cVD"/>
+                            <constraint firstItem="Cm8-t5-ywW" firstAttribute="leading" secondItem="NkH-6a-oqq" secondAttribute="leading" constant="5" id="jrG-hd-TLB"/>
+                            <constraint firstAttribute="trailing" secondItem="Cm8-t5-ywW" secondAttribute="trailing" constant="5" id="qaw-AQ-Q28"/>
+                            <constraint firstItem="Cm8-t5-ywW" firstAttribute="top" secondItem="0GO-7I-jQl" secondAttribute="bottom" id="tPG-Sa-v6N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NkH-6a-oqq"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageCollectionView" destination="Cm8-t5-ywW" id="IdO-7n-egz"/>
+                        <outlet property="searchBarItem" destination="0GO-7I-jQl" id="NQF-bN-7f1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JFp-Lv-5Xp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="998.55072463768124" y="96.428571428571431"/>
+        </scene>
+    </scenes>
+</document>
