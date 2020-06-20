@@ -8,11 +8,11 @@
 
 ## Application Architecture
 
-Project Architecture: MVC
-Model class: Photo.swift
-View Class: ImageCellCollectionViewCell.swift
-Controller Class: ImageCollectionViewController.swift
-and controller extension class: ImageCollectionViewController+API
+This project uses MVC design pattern and below are the list of the classes that supports their respectivity role of the pattern.\
+Model class: Photo.swift\
+View Class: ImageCellCollectionViewCell.swift\
+Controller Class: ImageCollectionViewController.swift\
+Controller extension class: ImageCollectionViewController+API
 
 
 ## Unit Tests
