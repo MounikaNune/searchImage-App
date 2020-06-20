@@ -17,4 +17,4 @@ This project uses MVC design pattern and below are the list of the classes that 
 
 
 ## Unit Tests
-This project has unit tests written for imagecollectionviewcontroller and few otherclass. These tests are in the Image_searchTests group. The same tests can be run on an iOS. To run the unit tests, select either the ListerKit (for iOS) in the Scheme menu. Then hold the Run button down and select the "Test" option, or press Command+u to run the tests.
+This project has unit tests written for imagecollectionviewcontroller and few other classes. These tests are in the Image_searchTests group. The same tests can be run on an iOS. To run the unit tests, select either the ListerKit (for iOS) in the Scheme menu. Then hold the Run button down and select the "Test" option, or press Command+u to run the tests.
