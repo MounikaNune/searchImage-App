@@ -10,9 +10,9 @@
 
 This project uses MVC design pattern and below are the list of the classes that supports their respectivity role of the pattern.\
 
-+ Model class: Photo.swift\
-+ View Class: ImageCellCollectionViewCell.swift\
-+ Controller Class: ImageCollectionViewController.swift\
++ Model class: Photo.swift
++ View Class: ImageCellCollectionViewCell.swift
++ Controller Class: ImageCollectionViewController.swift
 + Controller extension class: ImageCollectionViewController+API
 
 
